@@ -1,0 +1,18 @@
+# Use the official Python base image
+FROM python:3.9
+
+# Set the working directory in the container
+WORKDIR /challenge
+
+# Copy the requirements file to the container
+COPY requirements.txt .
+# COPY entrypoint.sh .
+
+# Install the project dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# These line for /entrypoint.sh
+COPY .env challenge/.env
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT "/entrypoint.sh"

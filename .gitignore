@@ -1,0 +1,7 @@
+.challenge
+challenge/challenge/__pycache__
+challenge/challenge/migrations/__pycache__
+challenge/api/__pycache__
+challenge/api/migrations/__pycache__
+.vscode
+```
