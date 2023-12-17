@@ -1,5 +1,3 @@
-pip freeze > requirements.txt
-
 # API challenge
 
 En este repositorio se cumplio con los objetivos propuestos en el documento
